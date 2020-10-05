@@ -1,0 +1,16 @@
+<div class="center" >
+  <ngb-carousel *ngIf="images">
+      <ng-template ngbSlide  *ngFor= "let i of images">
+        <div class="picsum-img-wrapper">
+          <img [src]="i" alt="Random first slide">
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+  <div>
+    <button 
+    (click)="addToCart()"
+    class="btn btn-info" 
+    style="margin-left: 500px; margin-right: 10px; margin-top: 20px">Add To Cart </button>
+    <button  class="btn btn-info" style="margin-left: 10px; margin-right: 100px; margin-top: 20px">Buy Now</button>
+  </div> 
